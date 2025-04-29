@@ -1,0 +1,7 @@
+class Solution(object):
+    def missingNumber(self, nums):
+        n=len(nums)
+        sum_array=sum(nums)
+        excepted_sum=n*(n+1)//2 
+        differeance=excepted_sum-sum_array
+        return differeance
